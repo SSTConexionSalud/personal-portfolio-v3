@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Portfolio - Full Stack Web Developer specializing in Frontend & Backend Development">
+    <meta name="keywords" content="web developer, full stack, frontend, backend, portfolio">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Premium Developer Portfolio">
+    <meta property="og:description" content="Full Stack Web Developer Portfolio">
+    <meta property="og:type" content="website">
+    
+    <title>OG Developer Portfolio | Full Stack Developer</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylish Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Stylish Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+            </div>
+            <div class="loading-text">Loading<span class="dots"></span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" data-aos="fade-right">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">OGPro</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Hero/Home -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle" data-aos="fade-up">Hello, I'm OG</p>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                        <span class="gradient-text"> A Full Stack</span><br>
+                        Web Developer
+                    </h1>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                        Crafting innovative digital experiences with modern technologies.
+                        Specialized in Frontend & Backend Development.
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://github.com/Omkarghare8" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/omkar-ghare-472a8a277" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/omkarghare6600" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://codepen.io/Omkarghare8" class="social-link" aria-label="CodePen">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-3d" data-aos="fade-left" data-aos-delay="200">
+                    <div class="laptop-3d">
+                        <div class="laptop-screen">
+                            <div class="code-editor">
+                                <div class="editor-header">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <div class="editor-content">
+                                    <code>
+                                        <span class="code-line"><span class="keyword">const</span> developer = {</span>
+                                        <span class="code-line">  name: <span class="string">'Omkar R. Ghare'</span>,</span>
+                                        <span class="code-line">  skills: [<span class="string">'React'</span>, <span class="string">'Node'</span>],</span>
+                                        <span class="code-line">  passion: <span class="string">'Coding'</span></span>
+                                        <span class="code-line">};</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- Section 2: About -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My journey in web development</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <div class="image-frame">
+                            <img src="assets/Images/about-image.jpeg" alt="Profile" loading="lazy">
+                        </div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>5+ Years</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>100+ Projects</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <p class="about-description">
+                        I'm a passionate Full Stack Developer with expertise in both Frontend and Backend technologies. 
+                        I create responsive, user-friendly websites and robust server-side applications.
+                    </p>
+                    <p class="about-description">
+                        With a strong foundation in modern web technologies, I bring ideas to life through clean code 
+                        and innovative solutions. My goal is to build applications that provide exceptional user experiences.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="150">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="50">0</h3>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-count="5">0</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comment-dots"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1rk2jbLEHRVHdOUKigQ0VXS6Lt_j1-uHX/view?usp=sharing" class="btn btn-primary">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Skills -->
+    <section id="skills" class="skills-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            
+            <div class="skills-categories">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="87"></div>
+                            </div>
+                            <span class="skill-percent">87%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Others</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <h4>Docker</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <h4>AWS</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <h4>Figma</h4>
+                            <div class="skill-progress">
+                                <div class="skill-bar" data-progress="83"></div>
+                            </div>
+                            <span class="skill-percent">83%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Services -->
+    <section id="services" class="services-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Professional services tailored to your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Creating responsive, modern, and user-friendly interfaces using latest technologies like React, Vue, and Angular.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                        <li><i class="fas fa-check"></i> Cross-browser Compatible</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Building robust and scalable server-side applications with Node.js, Python, and modern databases.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> RESTful APIs</li>
+                        <li><i class="fas fa-check"></i> Database Design</li>
+                        <li><i class="fas fa-check"></i> Server Management</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Full Stack Solutions</h3>
+                    <p>End-to-end web application development with seamless integration of frontend and backend.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Complete Solutions</li>
+                        <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and visually appealing user interfaces focused on user experience.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wireframing</li>
+                        <li><i class="fas fa-check"></i> Prototyping</li>
+                        <li><i class="fas fa-check"></i> User Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Portfolio -->
+    <section id="portfolio" class="portfolio-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent projects</p>
+            </div>
+            
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="fullstack" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-commerce Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>E-commerce Platform</h3>
+                                <p>Full stack e-commerce solution with payment integration</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="frontend" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Dashboard UI" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Admin Dashboard</h3>
+                                <p>Modern analytics dashboard with data visualization</p>
+                                <div class="portfolio-tech">
+                                    <span>Vue.js</span>
+                                    <span>Chart.js</span>
+                                    <span>Tailwind</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="backend" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="REST API" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>RESTful API Service</h3>
+                                <p>Scalable API service with authentication and authorization</p>
+                                <div class="portfolio-tech">
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="fullstack" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=600&h=400&fit=crop" alt="Social Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Social Media App</h3>
+                                <p>Real-time social networking platform</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>Socket.io</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="frontend" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop" alt="Landing Page" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>SaaS Landing Page</h3>
+                                <p>High-converting landing page with animations</p>
+                                <div class="portfolio-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="backend" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Data Analytics" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Data Analytics Tool</h3>
+                                <p>Backend system for processing and analyzing data</p>
+                                <div class="portfolio-tech">
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>Redis</span>
+                                </div>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Experience -->
+    <section id="experience" class="experience-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Professional experience timeline</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>Senior Full Stack Developer</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Leading development team in building enterprise-level web applications. Implementing microservices architecture and mentoring junior developers.</p>
+                        <div class="timeline-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Digital Agency Co.</h4>
+                        <p>Developed custom web applications for clients across various industries. Focused on creating responsive and performant solutions.</p>
+                        <div class="timeline-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3>Frontend Developer</h3>
+                        <h4>Creative Studio</h4>
+                        <p>Built modern and interactive user interfaces. Collaborated with designers to implement pixel-perfect designs.</p>
+                        <div class="timeline-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>jQuery</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017 - 2018</div>
+                        <h3>Junior Web Developer</h3>
+                        <h4>StartUp Ventures</h4>
+                        <p>Started my professional journey building websites and learning industry best practices.</p>
+                        <div class="timeline-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pune, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>omkarghare88@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 8698093024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Omkarghare8" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/omkar-ghare-472a8a277" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/omkarghare6600" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ogcoderworld" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">OGPro</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Crafting digital experiences with passion and precision.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">&copy; 2025 OGPro. All Rights Reserved. Designed with <i class="fas fa-heart"></i> By Omkar R. Ghare.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
